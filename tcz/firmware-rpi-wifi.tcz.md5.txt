@@ -1,0 +1,1 @@
+95391eb17acde417de98204bb6e70a03  firmware-rpi-wifi.tcz

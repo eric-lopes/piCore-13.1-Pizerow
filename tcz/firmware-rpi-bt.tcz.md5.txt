@@ -1,0 +1,1 @@
+ab2107be732e3333b0ffe3df3ebd6ffa  firmware-rpi-bt.tcz
