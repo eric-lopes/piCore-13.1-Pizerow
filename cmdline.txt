@@ -1,0 +1,1 @@
+nozswap console=tty1 root=/dev/ram0 elevator=deadline rootwait quiet nortc loglevel=3 noembed tz=GMT+3 lang=pt_BR #kmap=qwerty/br-abnt2
