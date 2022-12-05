@@ -1,0 +1,14 @@
+firmware-rpi-bt
+firmware-rpi-wifi
+libnl
+ncurses
+readline
+regdb
+wifi
+wireless-5.10.77-piCore
+wireless_tools
+wpa_supplicant
+acl
+libacl
+libattr
+vim
