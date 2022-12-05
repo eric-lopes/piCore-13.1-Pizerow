@@ -64,6 +64,7 @@ dtparam=i2c_arm=on
 # Enable audio (loads snd_bcm2835)
 dtparam=audio=on
 dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4
+amixer cset numid=3 2 #Trocar para 1 para forçar o áudio pelo fone de ouvido
 
 [all]
 #dtoverlay=vc4-fkms-v3d
