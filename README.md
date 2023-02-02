@@ -4,7 +4,7 @@ Configurando o piCore 13.1 na Placa Raspberry Pi 0 w
 O Objetivo é criar um sistema retro que possa rodas jogos no DosBox, Vice (emulador de Commodore), Master System e Nintendinho, além de criar um sistema atual, porém enxuto, que possa acessar a internet, ouvir músicas e pequenos scripts python (talvez fazer análises de rede, servidor de arquivos ftp).
 
 
-# Lista de TCZs Necessários #
+## Lista de TCZs Necessários #
 
 Para o Wifi:
 
@@ -25,7 +25,7 @@ libacl
 libattr
 vim
 
-# Após criar o SD #
+## Após criar o SD #
 
 Remover Kernel v7 e v7l
 
@@ -33,7 +33,7 @@ Na mesma partição, copiar a pasta tcz
 
 Salvar o antigo config.txt para config.txt.bkp e copiar o novo config.txt
 
-# Primeiro Boot #
+## Primeiro Boot #
 
 Aguardar gerar as chaves e salve-as permanentemente com:
 
@@ -48,6 +48,8 @@ Listar as partições (p), anotar o primeiro setor da segunda partição, delet�
 Reinicie com
 
 sudo reboot
+
+## Segundo Boot
 
 Ao reiniciar, redimensionar a nova partição.
 
@@ -70,6 +72,8 @@ Use o vim para colocar o firmware-rpi-wifi.tcz na primeira posição no arquivo 
 Adicione vim.tcz no final deste arquivo.
 
 Reinicie
+
+## Terceiro Boot
 
 Após reiniciar, instale o wifi
 
