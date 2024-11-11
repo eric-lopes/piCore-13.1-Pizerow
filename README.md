@@ -8,22 +8,23 @@ O Objetivo é criar um sistema retro que possa rodas jogos no DosBox, Vice (emul
 
 Para o Wifi:
 
-firmware-rpi-bt
-firmware-rpi-wifi
-libnl
-ncurses
-readline
-regdb
-wifi
-wireless-5.10.77-piCore
-wireless_tools
-wpa_supplicant
+* firmware-rpi-bt<br>
+* firmware-rpi-wifi<br>
+* libnl<br>
+* ncurses<br>
+* readline<br>
+* regdb<br>
+* wifi<br>
+* wireless-5.10.77-piCore<br>
+* wireless_tools<br>
+* wpa_supplicant<br>
 
 Para o vim:
-acl
-libacl
-libattr
-vim
+
+* acl<br>
+* libacl<br>
+* libattr<br>
+* vim<br>
 
 ## Após criar o SD #
 
@@ -55,20 +56,20 @@ Ao reiniciar, redimensionar a nova partição.
 
 sudo resize2fs /dev/mmcblk0p2
 
-Preparar vim, firmware-rpi e wifi para a instalação.
+Preparar vim, firmware-rpi e wifi para a instalação:
 
-sudo mount /dev/mmcblkop1 /mnt/mmcblkop1
-cp /mnt/mmcblkop1/tcz/* /mnt/mmcblkop2/tce/optional/
+sudo mount /dev/mmcblkop1 /mnt/mmcblkop1 <br>
+cp /mnt/mmcblkop1/tcz/* /mnt/mmcblkop2/tce/optional/<br>
 sudo rm -rf /mnt/mmcblkop1/tcz/
 
-Instalar vim e firmware-rpi-wifi
+Instalar vim e firmware-rpi-wifi:
 
-cd /mnt/mmcblkop2/tce/optional/
-tce-load -i vim.tcz
-tce-load -i firmware-rpi-wifi.tcz
-echo "firmware-rpi-wifi.tcz" >> ../onboot.lst
+cd /mnt/mmcblkop2/tce/optional/<br>
+tce-load -i vim.tcz<br>
+tce-load -i firmware-rpi-wifi.tcz<br>
+echo "firmware-rpi-wifi.tcz" >> ../onboot.lst<br>
 
-Use o vim para colocar o firmware-rpi-wifi.tcz na primeira posição no arquivo /mnt/mmcblkop2/tce/onboot.lst
+Use o vim para colocar o firmware-rpi-wifi.tcz na primeira posição no arquivo /mnt/mmcblkop2/tce/onboot.lst<br>
 Adicione vim.tcz no final deste arquivo.
 
 Reinicie
